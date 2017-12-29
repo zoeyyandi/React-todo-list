@@ -1,0 +1,96 @@
+.titlebar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.appContainer {
+  width: 80%;
+}
+
+.brand {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.list-container {
+  width: 60%;
+  background-color: #faf3c6;
+  margin: 0 auto;
+  padding: 10px 18px;
+}
+
+.AddtoListContainer {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.button {
+  border: 0;
+  display: inline-block;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-color: red;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.input {
+  width: 80%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.toDo {
+  margin: 10px;
+  font-size: 40px;
+  width: 60%;
+}
+
+.eachTask {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.toDoContainer {
+  margin-top: 35px;
+}
+
+.editContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
