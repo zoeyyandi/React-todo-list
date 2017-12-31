@@ -20,17 +20,22 @@ class Eachtodo extends Component {
   render() {
     return (
       <div className="eachTodo">
-        <p
-          style={{
-            textDecoration: this.props.isComplete ? 'line-through' : 'none',
-            color: this.props.isComplete ? 'red' : 'black'
-          }}
-        >
-          {this.props.eachTodo.todo}
-        </p>
+        {!this.props.isEditing && (
+          <p
+            className="task"
+            style={{
+              textDecoration: this.props.isComplete ? 'line-through' : 'none',
+              color: this.props.isComplete ? 'red' : 'black'
+            }}
+          >
+            {this.props.eachTodo.todo}
+          </p>
+        )}
         {this.props.isEditing && (
-          <form>
+          <form id="editForm" className="form">
             <input
+              className="inputBox"
+              id="editTask"
               type="text"
               autoFocus
               required
@@ -38,17 +43,27 @@ class Eachtodo extends Component {
               placeholder={this.props.eachTodo.todo}
               ref={input => (this.textInput = input)}
             />
-            <button type="submit" onClick={this.handleUpdateClick}>
-              Update
+            <button
+              className="button"
+              type="submit"
+              onClick={this.handleUpdateClick}
+            >
+              <i class="fa fa-pencil-square-o" aria-hidden="true" />
             </button>
           </form>
         )}
 
         {!this.props.isEditing && (
-          <div>
-            <button onClick={this.handleEditClick}>Edit</button>
-            <button onClick={this.handleClick}>Delete</button>
-            <button onClick={this.handleCompleteClick}>Complete</button>
+          <div className="rightButtons">
+            <button className="button" onClick={this.handleEditClick}>
+              <i className="fa fa-pencil" aria-hidden="true" />
+            </button>
+            <button className="button" onClick={this.handleClick}>
+              <i className="fa fa-trash" aria-hidden="true" />
+            </button>
+            <button className="button" onClick={this.handleCompleteClick}>
+              <i className="fa fa-check" aria-hidden="true" />
+            </button>
           </div>
         )}
       </div>

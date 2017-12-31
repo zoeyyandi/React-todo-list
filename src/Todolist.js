@@ -18,13 +18,13 @@ class Todolist extends Component {
     return (
       <div className="todoList">
         <div className="tab">
-          <button className="tablinks" onClick={this.handleAll}>
+          <button className="tabs" onClick={this.handleAll}>
             All
           </button>
-          <button className="tablinks" onClick={this.handleActive}>
+          <button className="tabs" onClick={this.handleActive}>
             Active
           </button>
-          <button className="tablinks" onClick={this.handleCompleted}>
+          <button className="tabs" onClick={this.handleCompleted}>
             Completed
           </button>
         </div>

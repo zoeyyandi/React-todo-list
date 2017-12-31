@@ -1,9 +1,9 @@
 .titlebar {
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  font-size: 52px;
+  margin: 80px 15px 30px 15px;
 }
 
 body {
@@ -13,84 +13,174 @@ body {
   font-family: 'Gochi Hand', cursive;
 }
 
+#react-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .appContainer {
-  width: 80%;
-}
-
-.brand {
-  text-decoration: none;
-  color: red;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.list-container {
+  position: relative;
   width: 60%;
-  background-color: #faf3c6;
-  margin: 0 auto;
-  padding: 10px 18px;
-}
-
-.AddtoListContainer {
-  width: 60%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px #8ca2ae;
+  background-color: #f9f8f4;
 }
 
-.form {
+.bottom {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.button {
-  border: 0;
-  display: inline-block;
-  background-color: red;
-  height: 50px;
-  width: 50px;
-  color: white;
-  border-color: red;
-  border-radius: 50%;
-  margin: 0 3px;
+.verticalLine {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  height: 100%;
+  width: 2px;
+  background-color: #fc555d;
 }
 
-.input {
-  width: 80%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid gray;
-  font-size: 20px;
-}
-
-.input:focus {
-  outline: none;
-}
-
-.toDo {
-  margin: 10px;
-  font-size: 40px;
-  width: 60%;
-}
-
-.eachTask {
+.rightNotepad {
+  height: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-}
-
-.buttonGroup {
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.toDoContainer {
-  margin-top: 35px;
+.todoList {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 70px;
 }
 
-.editContainer {
+.eachTodo {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  align-items: center;
+  border-bottom: 1.5px solid #8ca2ae;
+}
+
+.inputTodo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.inputBox:focus {
+  outline-color: #8ca2ae;
+}
+
+.inputBox {
+  width: 80%;
+  height: 35px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.rightButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 23%;
+  margin-right: 30px;
+}
+
+.button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.fa-pencil,
+.fa-trash,
+.fa-check,
+.fa-plus,
+.fa-pencil-square-o {
+  font-size: 15px;
+}
+
+.task {
+  font-size: 26px;
+  margin-left: 30px;
+}
+
+.tab {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 25px 25px 25px;
+}
+
+.tabs {
+  width: 127px;
+  height: 35px;
+  border: none;
+  background-color: #455d6b;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  margin: 0 20px 0 0;
+  color: #f9f8f4;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.hole {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #d8c5ab;
+  margin-top: 15px;
+  box-shadow: inset -8px 8px 0 0 #8a816b;
+}
+
+.holes {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.eachHole {
+  position: relative;
+  text-align: center;
+}
+
+.sprial {
+  width: 3px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+  margin-left: 20px;
+  box-shadow: 0 -6px 0.5px 0.5px rgb(48, 47, 47);
+}
+
+#editTask {
+  margin: 0 30px 0 20px;
+  width: 65%;
+}
+
+#editForm {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 22px;
 }
