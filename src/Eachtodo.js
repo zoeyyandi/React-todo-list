@@ -48,7 +48,7 @@ class Eachtodo extends Component {
               type="submit"
               onClick={this.handleUpdateClick}
             >
-              <i class="fa fa-pencil-square-o" aria-hidden="true" />
+              <i className="fa fa-pencil-square-o" aria-hidden="true" />
             </button>
           </form>
         )}

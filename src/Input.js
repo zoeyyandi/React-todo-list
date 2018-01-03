@@ -31,7 +31,7 @@ class Input extends Component {
             placeholder=" What do you need to do?"
           />
           <button className="button" onClick={this.handleClick} type="submit">
-            <i class="fa fa-plus" aria-hidden="true" />
+            <i className="fa fa-plus" aria-hidden="true" />
           </button>
         </form>
       </div>
